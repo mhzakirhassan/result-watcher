@@ -10,6 +10,8 @@ CHAT_ID = os.getenv("CHAT_ID")
 STATE_FILE = "state.json"
 OFFSET_FILE = "offset.json"
 
+send("GitHub Action is running", CHAT_ID)
+
 def send(msg, chat_id):
     requests.get(
         f"https://api.telegram.org/bot{TOKEN}/sendMessage",
