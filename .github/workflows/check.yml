@@ -39,3 +39,8 @@ jobs:
 
           git diff --cached --quiet || git commit -m "Update bot state"
           git push
+
+        - name: Debug
+          run: |
+            date
+            ls -la
