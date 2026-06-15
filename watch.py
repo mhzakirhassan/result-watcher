@@ -10,7 +10,7 @@ CHAT_ID = os.getenv("CHAT_ID")
 STATE_FILE = "state.json"
 OFFSET_FILE = "offset.json"
 
-send("GitHub Action is running", CHAT_ID)
+
 
 def send(msg, chat_id):
     requests.get(
@@ -18,6 +18,7 @@ def send(msg, chat_id):
         params={"chat_id": chat_id, "text": msg}
     )
 
+send("GitHub Action is running", CHAT_ID)
 def load_state():
     if os.path.exists(STATE_FILE):
         return json.load(open(STATE_FILE))
