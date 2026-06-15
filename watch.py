@@ -4,8 +4,8 @@ import os
 
 URL = "https://result.doenets.lk/result/service/examDetails"
 
-TOKEN = "8266602791:AAHPZ_75Qi-HRvmaoA99QLzHSd6nTlcyajs"
-CHAT_ID = "1975313934"
+TOKEN = os.getenv("BOT_TOKEN")
+CHAT_ID = os.getenv("CHAT_ID")
 
 STATE_FILE = "state.json"
 OFFSET_FILE = "offset.json"
