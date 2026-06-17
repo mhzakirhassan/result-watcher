@@ -7,9 +7,6 @@ URL = "https://result.doenets.lk/result/service/examDetails"
 TOKEN = os.getenv("BOT_TOKEN")
 CHAT_ID = os.getenv("CHAT_ID")
 
-STATE_FILE = "state.json"
-OFFSET_FILE = "offset.json"
-
 
 
 def send(msg, chat_id):
